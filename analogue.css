@@ -4,14 +4,12 @@ body{
     justify-content: center;
     text-align: center;
     background-color: #000;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
 }
 .container{
     display: flex;
-    gap: 1rem;
-    width: 550px;
-    height: 500px;
+    gap: 15px;
+    width: 80%;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
@@ -19,11 +17,12 @@ body{
 }
 .side-img{
     display: grid;
-    height: 90vh;
+    height: 500px;
     overflow: scroll;
 }
 .main-img img{
     width: 400px;
+    
 }
 .side-img img{
     width: 100px;
@@ -36,5 +35,12 @@ body{
 @media only screen and (max-width:700px){
     .main-img img{
         width: 300px;
+    }
+    .container{
+        width: 100%;
+        margin-top: 10%;
+    }
+    .side-img{
+        height: 350px;
     }
 }
