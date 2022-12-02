@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(178, 238, 218);
+    position: relative;
+    font-family: sans-serif;
+}
+header{
+    width: 100vw;
+    justify-content: center;
+    text-align: center;
+    line-height: 12px;
+    margin-top: 50px;
+}
+header h1{
+    text-transform: uppercase;
+    color: forestgreen
+}
+.underline{
+    height: 2px;
+    background-color: forestgreen;
+    width: 80px;
+    margin: 0 auto;
+}
+.container{
+    text-align: center;
+    position: absolute;
+    left: 15%;
+    top: 100px;
+}
+.container h3{
+    font-size: 35px;
+    color: rgb(65, 63, 63);
+}
+.container span{
+    color: forestgreen;
+}
+.container .button button{
+    padding: 10px 0;
+    width: 200px;
+    background-color: forestgreen;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 18px;
+}
+.countdown{
+    text-align: center;
+    position: absolute;
+    top: 350px;
+    left: 37%;
+}
+.count-div{
+    display: flex;
+}
+.count-div > div{
+    margin-left: 12px;
+    background-color: #000;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+}
+.success{
+    display: flex;
+    position: relative;
+    left: 65%;
+    top: 100px;
+}
+.success span{
+    -webkit-text-stroke: 3px rgb(61, 146, 61);
+    font-size: 50px;
+    letter-spacing: 8px;
+    color: transparent;
+    animation: trans  1s infinite;
+    animation-delay: calc(0.09s * var(--i));
+}
+@keyframes trans {
+    0%, 40%, 100%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-30px);
+    }
+    
+}
+
+@media only screen and (max-width:700px){
+    .success{
+       position: absolute;
+       top: 80px;
+       left: 35%;
+       
+    }
+    .success span{
+        font-size: 30px;
+    }
+    .container{
+        position: relative;
+        left: 12px;
+    }
+    .countdown{
+        position: absolute;
+        top: 350px;
+        left: 30px;
+    }
+    .count-div > div{
+        width: 90px;
+        height: 90px;
+    }
+    .container h3{
+        font-size: 28px;
+    }
+    .container .button button{
+        font-size: 15px;
+    }
+    .countdown h1{
+        font-size: 25px;
+    }
+}
