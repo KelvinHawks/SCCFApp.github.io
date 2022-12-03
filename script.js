@@ -39,3 +39,7 @@ function calculateTime(){
 let interval = setInterval(calculateTime, 1000)
 calculateTime()
 
+let date = document.getElementById('date')
+
+date.innerHTML = new Date().getFullYear()
+

@@ -86,6 +86,35 @@ header h1{
     }
     
 }
+.links{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    line-height: 5px;
+}
+.paragraph{
+    text-align: center;
+    margin-top: 25px;
+    line-height: 5px;
+}
+.links i{
+    margin-left: 35px;
+    font-size: 25px;
+}
+.links .twitter{
+    color: rgb(8, 140, 184);
+}
+.links .whatsapp{
+    color: green;
+}
+.links .phone{
+    color: green;
+}
+
 
 @media only screen and (max-width:700px){
     .container{
@@ -105,7 +134,7 @@ header h1{
         font-size: 40px;
     }
     .countdown{
-        margin-top: 10%;
+        margin-top: 8%;
     }
     .countdown h1{
         font-size: 25px;
@@ -115,6 +144,6 @@ header h1{
         height: 90px;
     }
     .success{
-        margin-top: 5%;
+        margin-top: 0;
     }
 }
