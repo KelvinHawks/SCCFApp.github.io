@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(172, 172, 172);
+}
+.container{
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+}
+.container a{
+    text-decoration: none;
+}
