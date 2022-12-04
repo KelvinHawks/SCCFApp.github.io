@@ -145,8 +145,14 @@ header h1{
     .success{
         margin-top: 0;
     }
+    .links{
+        margin-top: 40px;
+    }
     .links i{
         margin-left: 23px;
         font-size: 20px;
+    }
+    .paragraph{
+        margin-top: 40px;
     }
 }
