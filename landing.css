@@ -43,6 +43,7 @@
 }
 .gen-content a{
     text-decoration: none;
+    color: rgb(135, 62, 204);
 }
 .gen-cont-div{
     display: flex;
