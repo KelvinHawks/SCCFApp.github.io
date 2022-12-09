@@ -1,4 +1,5 @@
 const countdown = document.querySelectorAll('.count-div h3')
+let deadline = document.querySelector('.countdown')
 
 let futureTime = new Date(2022,11,13,00,0)
 
@@ -35,6 +36,11 @@ function calculateTime(){
     countdown.forEach(function(item,index){
         item.innerHTML = format(values[index])
     })
+
+    if(t < 0){
+        clearInterval(interval)
+        deadline.innerHTML = `<h1>Exams in progress</h1>`
+    }
 }
 let interval = setInterval(calculateTime, 1000)
 calculateTime()
