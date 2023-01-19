@@ -140,8 +140,14 @@ header h1{
         font-size: 25px;
     }
     .count-div > div{
-        width: 80px;
-        height: 90px;
+        width: 50px;
+        height: 80px;
+    }
+    .count-div h3{
+        font-size: 18px;
+    }
+    .count-div h4{
+        font-size: 15px;
     }
     .success{
         margin-top: 0;
