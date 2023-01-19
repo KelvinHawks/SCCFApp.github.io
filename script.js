@@ -1,7 +1,7 @@
 const countdown = document.querySelectorAll('.count-div h3')
 let deadline = document.querySelector('.countdown')
 
-let futureTime = new Date(2022,11,13,00,0)
+let futureTime = new Date(2023,3,13,00,0)
 
 //let day = futureTime.getDay()
 //let hour = futureTime.getHours()
@@ -15,17 +15,17 @@ function calculateTime(){
     const currentDate = new Date().getTime()
     //console.log(t);
     let t = futureDate - currentDate
-
+    const oneMonth = 30*24*60*60*1000
     const oneDay = 24*60*60*1000
     const oneHour = 60*60*1000
     const oneMin = 60*1000
 
-    const days = Math.floor(t/oneDay)
+    const month = Math.floor(t/oneMonth)
+    const days = Math.floor((t%oneMonth)/oneDay)
     const hours = Math.floor((t%oneDay)/oneHour)
     const min = Math.floor((t%oneHour)/oneMin)
     const sec = Math.floor((t%oneMin)/1000)
-
-    values = [days,hours,min,sec]
+    values = [month,days,hours,min,sec]
 
     function format(item)
     {if(item < 10){
