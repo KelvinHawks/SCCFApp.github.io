@@ -10,3 +10,6 @@ body{
     text-decoration: none;
     color: rgb(124, 35, 207);
 }
+.container h3{
+    text-transform: uppercase;
+}
