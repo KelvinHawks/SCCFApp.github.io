@@ -50,3 +50,12 @@ let date = document.getElementById('date')
 
 date.innerHTML = new Date().getFullYear()
 
+
+//web loader
+
+const webLoader = document.querySelector('.web-loader')
+
+window.addEventListener('load', ()=>{
+    webLoader.classList.add('hidden-web-loader')
+})
+

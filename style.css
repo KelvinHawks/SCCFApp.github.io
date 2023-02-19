@@ -114,6 +114,22 @@ header h1{
 .links .phone{
     color: green;
 }
+.web-loader{
+    position: fixed;
+    top: 30%;
+    bottom: 0;
+    left: 50%;
+    justify-content: center;
+    display: grid;
+    visibility: visible;
+    z-index: 999;
+    transition: 1s;
+}
+.hidden-web-loader{
+    visibility: hidden;
+    z-index: -999;
+}
+
 
 
 @media only screen and (max-width:700px){
