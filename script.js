@@ -28,7 +28,8 @@ function calculateTime(){
     values = [days,hours,min,sec]
 
     function format(item)
-    {if(item < 10){
+    {
+        if(item < 10){
         return `0${item}`
     }
     return item
