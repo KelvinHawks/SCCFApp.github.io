@@ -1,7 +1,7 @@
 const countdown = document.querySelectorAll('.count-div h3')
 let deadline = document.querySelector('.countdown')
 
-let futureTime = new Date("March 13, 2023 12:00:00")
+let futureTime = new Date("June 12, 2023 12:00:00")
 
 //let day = futureTime.getDay()
 //let hour = futureTime.getHours()
